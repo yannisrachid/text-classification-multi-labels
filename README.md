@@ -18,6 +18,7 @@ Dès le début de hackathon, nous avons bien déterminé les étapes du projet :
 5) Évaluer le modèle
 6) Développer une interface streamlit pour utiliser le modèle afin de prédire
 Dans un premier temps, nous avons défini, en fonction de la demande de l’équipe “Qualité”, quels allaient être les labels que nous souhaitions classer. Pour cette première expérience, nous avons décidé de conserver quatre classes : achat véhicule neuf, achat véhicule d’occasion, service après-vente, location.
+
 Avant de procéder au paramétrage et à l’entraînement du modèle, il fallait déjà récupérer les données. Pour ce faire, on a utilisé la librairie zenpy1 pour requêter et charger les données depuis Zendesk, l’outil de gestion de la relation client utilisé par l’entreprise.
 Pour la récupération, on a choisi de se concentrer sur des leads associés à toutes marques confondues, depuis le 1er janvier 2022. Il est possible de récupérer pour chaque lead différents champs : la catégorie (véhicule neuf/d’occasion), la motorisation souhaitée, le code postal, la ville, la civilité, la catégorie socio-professionnelle, l’usage prévu pour le véhicule,
 Cependant, les champs qui nous intéressaient étaient liés à la conversation : le statut de la conversation (open, hold, pending), le jour, l’heure, le nombre d’échanges, l’URL (où la conversation a été enclenchée), le type d’appareil, le système d’exploitation et le navigateur web utilisé...
